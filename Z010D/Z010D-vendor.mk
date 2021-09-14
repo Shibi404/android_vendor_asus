@@ -347,9 +347,6 @@ PRODUCT_PACKAGES += \
     CNEService \
     qcrilmsgtunnel \
     QtiTetherService \
-    AsusCamera \
-    AsusGallery \
-    AsusGalleryBurst \
     vendor.qti.hardware.fm@1.0
 
 
@@ -843,14 +840,3 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so \
     vendor/asus/Z010D/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
     vendor/asus/Z010D/proprietary/vendor/etc/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/diracvdd.bin
-
-# AsusCamera
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libgif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libgif.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_detection.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libjni_face_detection.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_effect.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libjni_face_effect.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_effect_KK.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libjni_face_effect_KK.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_filter_show.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm/libjni_filter_show.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libjni_picbest_static.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libjni_picbest_static.so \
-    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libjni_piclear_static.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libjni_piclear_static.so

@@ -319,27 +319,3 @@ dex_import {
 	owner: "asus",
 	jars: ["proprietary/framework/imscmlibrary.jar"],
 }
-
-# AsusCamera
-android_app_import {
-	name: "AsusCamera",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "AsusGallery",
-	owner: "asus",
-	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
