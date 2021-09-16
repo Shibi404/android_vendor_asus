@@ -22,187 +22,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_ds_api",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libloc_ds_api.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libloc_ds_api.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdiag",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdiag.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdiag.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdsutils",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdsutils.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdsutils.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libidl",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libidl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libidl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_client_qmux",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_client_qmux.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_client_qmux.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmiservices",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmdmdetect",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmdmdetect.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmdmdetect.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmm-abl",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmm-abl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmm-abl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -226,31 +45,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "shutdownlistener",
+	name: "qcrilmsgtunnel",
 	owner: "asus",
-	apk: "proprietary/app/shutdownlistener/shutdownlistener.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "asus",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "QtiTetherService",
-	owner: "asus",
-	apk: "proprietary/priv-app/QtiTetherService/QtiTetherService.apk",
+	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -283,27 +80,24 @@ android_app_import {
 dex_import {
 	name: "com.qti.snapdragon.sdk.display",
 	owner: "asus",
-	jars: ["proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar"],
-	soc_specific: true,
+	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
 }
 
 dex_import {
 	name: "imscmlibrary",
 	owner: "asus",
-	jars: ["proprietary/vendor/framework/imscmlibrary.jar"],
-	soc_specific: true,
+	jars: ["proprietary/framework/imscmlibrary.jar"],
 }
 
 dex_import {
 	name: "qcnvitems",
 	owner: "asus",
-	jars: ["proprietary/vendor/framework/qcnvitems.jar"],
-	soc_specific: true,
+	jars: ["proprietary/framework/qcnvitems.jar"],
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "asus",
-	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
-	soc_specific: true,
+	jars: ["proprietary/framework/qcrilhook.jar"],
 }
+
