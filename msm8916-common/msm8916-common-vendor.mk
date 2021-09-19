@@ -23,16 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/asus/msm8916-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/asus/msm8916-common/proprietary/lib/DITConfig.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DITConfig.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_HL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_HL.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_NORMAL.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_PREVIEW.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_SR.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_SR.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_VIDEO.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_HL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_HL.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_NORMAL.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_PRE.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_PRE.cfg \
-    vendor/asus/msm8916-common/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_VIDEO.cfg \
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ditSCidGen/msgchk.db \
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ParameterDB.db \
     vendor/asus/msm8916-common/proprietary/lib/sensors.asus.so:$(TARGET_COPY_OUT_SYSTEM)/lib/sensors.asus.so \
@@ -42,10 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/lib/libmllite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmllite.so \
     vendor/asus/msm8916-common/proprietary/lib/libmplmpu.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmplmpu.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_AT.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_AT.so \
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_ArcSoftMOD.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_ArcSoftMOD.so \
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_ISP.so \
-    vendor/asus/msm8916-common/proprietary/lib/libxditk_SR.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_SR.so \
     vendor/asus/msm8916-common/proprietary/lib64/sensors.asus.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/sensors.asus.so \
     vendor/asus/msm8916-common/proprietary/lib64/libinvensense_hal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libinvensense_hal.so \
     vendor/asus/msm8916-common/proprietary/lib64/libmllite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmllite.so \
@@ -223,11 +209,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_DIT_MSM8916.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_DIT_Qualcomm.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_Network.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_Network.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_mmcamera2_stats_algorithm.so \
-    vendor/asus/msm8916-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
